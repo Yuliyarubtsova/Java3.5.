@@ -59,6 +59,20 @@ class ProductManagerTest {
     }
 
     @Test
+    public void shouldSearchByProduct() {
+        Product[] returned = new Product[]{first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth};
+
+        doReturn(returned).when(repository).findAll();
+
+        Product[] actual = manager.searchBy("Бронте");
+        Product[] expected = new Product[]{fifth, eighth};
+
+        assertArrayEquals(actual, expected);
+    }
+
+
+
+    @Test
     public void shouldSearchByAnotherProduct () {
         Product[] returned = new Product[]{first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth};
 
