@@ -8,7 +8,7 @@ class ProductTest {
     @Test
     public void shouldUseEquals() {
         Product first = new Product(1, "Java1", 1000);
-        Product second = new Product(1, "Java1", 100);
+        Product second = new Product(1, "Java1", 1000);
         assertEquals(first, second);
     }
 }

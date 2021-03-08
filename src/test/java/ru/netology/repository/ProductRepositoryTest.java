@@ -11,7 +11,7 @@ class ProductRepositoryTest {
     private Book coreJava = new Book();
 
     @Test
-    public  void shouldSaveOneItem() {
+    public void shouldSaveOneItem() {
         repository.save(coreJava);
 
         Product[] expected = new Product[]{coreJava};

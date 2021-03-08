@@ -7,17 +7,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
 
- @Test
+    @Test
     public void shouldHaveAllMethodsFieldsFromSuper() {
-     Book book = new Book();
- }
+        Book book = new Book();
+    }
 
- @Test
+    @Test
     public void shouldEquals() {
-     Book book1 = new Book(1, "Java", 10, "A", 90, 2021);
-     Book book2 = new Book(1, "Java", 10, "A", 90, 2021);
+        Book book1 = new Book(1, "Java", 10, "A");
+        Book book2 = new Book(1, "Java", 10, "A");
 
-     assertEquals(book1, book2);
+        assertEquals(book1, book2);
 
- }
+    }
 }
