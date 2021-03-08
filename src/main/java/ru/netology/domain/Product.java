@@ -54,7 +54,6 @@ public class Product {
     public int hashCode() {
         return Objects.hash(id, name, price);
     }
-
     @Override
     public String toString() {
         return "Product{" +
